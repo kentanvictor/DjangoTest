@@ -19,5 +19,6 @@ from django.urls import path
 from booktest import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$',views.index)
+    url(r'^$',views.index),
+    url(r'^(\d+)$',views.show)
 ]

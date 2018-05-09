@@ -20,5 +20,6 @@ from booktest import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.index),
-    url(r'^(\d+)$',views.show)
+    url(r'^(\d+)$',views.show),
+    url(r'^(test/)',views.test)
 ]
